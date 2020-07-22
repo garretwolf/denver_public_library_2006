@@ -10,4 +10,8 @@ class Author
   def name
     "#{first_name} " + "#{last_name}"
   end
+
+  def write(title, publication_date)
+    require "pry"; binding.pry
+  end
 end
