@@ -22,4 +22,12 @@ class AuthorTest < Minitest::Test
 
     assert_equal [], charlotte_bronte.books
   end
+
+  def test_it_creates_an_instance
+    charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
+    jane_eyre = charlotte_bronte.write("Jane Eyre", "October 16, 1847")
+
+    assert_equal Book, jane_eyre.class
+    assert_equal "Jane Eyre", jane_eyre.title
+  end  
 end
