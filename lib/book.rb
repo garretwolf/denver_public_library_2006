@@ -15,6 +15,5 @@ class Book
 
   def publication_year
     publication_date[-4..-1]
-    require "pry"; binding.pry
   end
 end
