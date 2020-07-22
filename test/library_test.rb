@@ -53,6 +53,7 @@ class LibraryTest < Minitest::Test
   end
 
   def test_it_can_find_publication_time_frame
+    skip
     dpl = Library.new("Denver Public Library")
     charlotte_bronte = Author.new({first_name: "Charlotte", last_name: "Bronte"})
     harper_lee = Author.new({first_name: "Harper", last_name: "Lee"})

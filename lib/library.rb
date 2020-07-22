@@ -9,7 +9,6 @@ class Library
 
   def add_author(author)
     @authors << author
-    # require "pry"; binding.pry
   end
 
   def books
@@ -17,4 +16,11 @@ class Library
       author.books
     end.flatten
   end
-end
+
+  # def publication_time_frame_for(author)
+  #   time_frame = Hash.new
+  #   start = @authors.books.min do |book|
+  #     book.publication_year
+  #     end
+  #   end
+  end
