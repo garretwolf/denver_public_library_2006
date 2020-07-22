@@ -12,6 +12,8 @@ class Author
   end
 
   def write(title, publication_date)
-    require "pry"; binding.pry
+    #creates book
+    Book.new({:author_first_name => @first_name, :author_last_name => @last_name,
+      :title => title, :publication_date => publication_date})
   end
 end
